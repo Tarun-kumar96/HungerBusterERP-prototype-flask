@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <link href="main.css" rel="stylesheet" type="text/css" media="all">
+</head>
+    <body>
+      <div class="box">
+  			<h1>Add order details here</h1>
+  			<form action="/addOrderInfo" method="post">
+    			<input type="text" name="numoforders" id="numoforders" placeholder="Number of orders" required/>
+                <br>
+                <input type="text" name="totalcost" id="totalcost" placeholder="Total cost" required/>
+                <br>
+                <input type="submit" class="button" value="Add"/><br>
+                <br>
+            </form>
+        </div>
+        
+        <h3> {{ error }}</h3>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+        <!-- <link href="main.css" rel="stylesheet" type="text/css" media="all"> -->
+   <head>
+      <style>
+         table, th, td {
+            border: 1px solid black;
+         }
+      </style>
+   </head>
+<body>
+
+<h2>Complete orders from today</h2>
+
+<table  style="width:100%">
+<tr>
+    <th>Time stamp</th>
+    <th>Number of orders</th> 
+    <th>Total cost of orders</th>
+</tr>
+<br>
+{% for key in result%}
+<tr>
+    <th>{{key[1]}}</th>
+    <th>{{key[2]}}</th> 
+    <th>{{key[3]}}</th>
+</tr>
+<br>
+{% endfor %}
+</table>
+
+<br>
+<a href="/addOrderInfo">Add order details here</a>
+
+</body>
+</html>
